@@ -1,0 +1,249 @@
+/*!!!!!!!!!! Style général !!!!!!!!!! */
+body {
+    margin: 0px 50px 0 50px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blue{
+    color: #0065FC;
+}
+
+.lightblue{
+    background-color: #DEEBFF;
+}
+
+.grey {
+    background-color: #F2F2F2;
+}
+
+h1 , h2 ,h3 {
+    font-weight: bold;
+}
+
+/* !!!!!!!! NAVIGATION !!!!!!!!!!! */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    /* border: aqua solid 1px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarlogo {
+    width: 120px;
+    height: 50px;
+    /* border: rgb(27, 38, 139) solid 1px; */
+}
+
+.navbarList {
+    display: flex;
+    flex-direction: row;
+    /* border: rgb(13, 10, 37) solid 1px; */
+    
+}
+
+.navbarLink {
+    /* border: red solid 1px; */
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+/* !!!!!!!!!!!!!!!!!header!!!!!!!!!!!!!!!!! */
+
+.searchBar {
+    border-radius: 10px;
+    height: 50px;
+    /* border: 3px solid red; */
+    width: 420px;
+    display: flex;
+
+}
+
+.locationLogoCase {
+    /* border: seagreen solid 3px; */
+    height: 50px;
+    width: 10%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.searchCase {
+    width: 50%;
+    border: #F2F2F2 1PX solid   ;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.searchButton {
+    width: 40%;
+    background-color: #0065FC;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 0px 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+
+/* !!!!!!!!!!!!!!!Filtres!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+.blocFiltre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 80%;
+    margin-top: 50px;
+}
+
+.linkFiltre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* height: 150px; */
+    border: #F2F2F2 3px solid;
+    border-radius: 25px;
+    height: 47px;
+    border-left: none;
+}
+
+.circleFiltre{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleFiltre {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left : 10px;
+    padding-right: 10px;
+    
+}
+
+.infoColor {
+    color: white;
+    border: 2px solid #F2F2F2;
+    background-color: #0065FC;
+    border-radius: 20px;
+}
+
+/* !!!!!!!!!!!!!!Contenu de la page!!!!!!!!!!!!!!!!!!!! */
+.mainSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* !!!!!!!!!!!!!!!!!!Section hebergement!!!!!!!!!!!!!! */
+
+.blocHebergement {
+    width: 880px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.listeHebergement {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.carteHebergement {
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    /* padding: 5px; */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.imgHebergement {
+    width: 240px;
+    height: 115px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 5px 5px 0px 5px;
+    
+}
+
+.nomHebergement {
+    margin: 0px 5px 0px 5px;
+    width: 240px;
+}
+
+.prixHebergment {
+    width: 240px;
+    margin: 0px 5px 0px 5px;
+}
+
+.noteHebergement {
+    margin: 0px 5px;
+}
+
+/* !!!!!!!!!!!!!!!!!section populaire!!!!!!!!!!!!!! */
+
+.blocPopulaire {
+    width: 350px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.titrePopulaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartePopulaire {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.imgPopulaire {
+    width: 130px;
+    height: 130px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.descriptionPopulaire {
+    display: flex;
+    flex-direction: column;
+}
+
+.nomPopulaire {
+    margin: 0px 5px;
+}
+
+.notePopulaire {
+    margin: 0px 5px;
+}
+
+/*!!!!!!!!!!!!!!!!section activite!!!!!!!!!!!!!!!!!!*/
+
