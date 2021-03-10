@@ -3,10 +3,17 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Reservia</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 400px)" href="smartphone.css" type="text/css" /> -->
+
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600&display=swap" rel="stylesheet">
+
+    <!--  icone -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
@@ -16,60 +23,72 @@
 <body>
 
     <nav class="navbar">
-        <img src="images/Reservia@3x.png" alt="logo Reservia" class="navbarlogo">
+
+
         <ul class="navbarList">
+            <div class="navbarlogo">
+                <img src="images/Reservia@3x.png" alt="logo Reservia" class="imgLogo">
+            </div>
             <li class="navbarLink"><a href="#hebergementMarseille">Hébergements</a></li>
             <li class="navbarLink"><a href="#activitesMarseille">Activités</a></li>
-            <li class="navbarLink blue"><a href="">S'inscrire</a></li>
+            <li class="blue navbarSubs"><a href="">S'inscrire</a></li>
         </ul>
     </nav>
 
-    <header>
-        <h2>Trouvez votre Hébergements pour les vacances de rêve</h2>
-        <p>En plein centre ville ou en pleine nature</p>
+    <header class="sectionRecherche">
+        <h2 class="titreRecherche">Trouvez votre Hébergements pour les vacances de rêve</h2>
+        <p class="descriptionSearch">En plein centre ville ou en pleine nature</p>
 
-        <form action="" class="searchBar">
+        <form action="#" class="searchBar">
 
             <span class="grey locationLogoCase">
                 <i class="fas fa-map-marker-alt locationLogo"></i>
             </span>
 
             <input type="text" value="Marseille, France" class="searchCase">
+
             <input type="submit" value="Rechercher" class="searchButton">
+            <div class="searchLoupe">
+                <i class="fas fa-search"></i>
+            </div>
 
 
         </form>
 
         <div class="blocFiltre">
-            <h3>Filtres</h3>
+            <h3 class="titreFiltre">Filtres</h3>
 
-            <a href="" class="linkFiltre">
-                <span class="circleFiltre lightblue">
-                    <i class="fas fa-money-bill-wave blue"></i>
-                </span>
-                <h3 class="titleFiltre">Economique</h3>
-            </a>
+            <div class="listeLinkFiltre">
+                <a href="" class="linkFiltre">
+                    <span class="circleFiltre lightblue">
+                        <i class="fas fa-money-bill-wave blue"></i>
+                    </span>
+                    <h3 class="titleFiltre">Economique</h3>
+                </a>
 
-            <a href="" class="linkFiltre">
-                <span class="circleFiltre lightblue">
-                    <i class="fas fa-child blue lightblue"></i>
-                </span>
-                <h3 class="titleFiltre">Familial</h3>
-            </a>
+                <a href="" class="linkFiltre">
+                    <span class="circleFiltre lightblue">
+                        <i class="fas fa-child blue lightblue"></i>
+                    </span>
+                    <h3 class="titleFiltre">Familial</h3>
+                </a>
 
-            <a href="" class="linkFiltre">
-                <span class="circleFiltre lightblue">
-                    <i class="fas fa-heart blue lightblue"></i>
-                </span>
-                <h3 class="titleFiltre">Romantique</h3>
-            </a>
+                <a href="" class="linkFiltre">
+                    <span class="circleFiltre lightblue">
+                        <i class="fas fa-heart blue lightblue"></i>
+                    </span>
+                    <h3 class="titleFiltre">Romantique</h3>
+                </a>
 
-            <a href="" class="linkFiltre">
-                <span class="circleFiltre lightblue">
-                    <i class="fas fa-dog blue lightblue"></i>
-                </span>
-                <h3 class="titleFiltre">Animaux autorisés</h3>
-            </a>
+                <a href="" class="linkFiltre">
+                    <span class="circleFiltre lightblue">
+                        <i class="fas fa-dog blue lightblue"></i>
+                    </span>
+                    <h3 class="titleFiltre">Animaux autorisés</h3>
+                </a>
+            </div>
+
+
         </div>
 
         <p><i class="fas fa-info-circle infoColor"></i> Plus de 500 logements sont diponibles dans cette ville</p>
@@ -78,7 +97,7 @@
     <section class="mainSection">
 
         <div class="blocHebergement grey" id="hebergementMarseille">
-            <h2>Hébergements à Marseille</h2>
+            <h2 class="titreDecalage">Hébergements à Marseille</h2>
             <div class="listeHebergement">
                 <div class="carteHebergement">
                     <img class="imgHebergement" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -165,6 +184,7 @@
                     </div>
                 </div>
             </div>
+            <p  class="titreDecalage">Afficher plus</p>
 
 
         </div>
@@ -172,8 +192,8 @@
         <div class="blocPopulaire grey">
 
             <div class="titrePopulaire">
-                <h2>Les plus populaires </h3>
-                    <i class="fas fa-chart-line"></i>
+                <h2 class="titreDecalage">Les plus populaires </h2>
+                <i class="fas fa-chart-line"></i>
             </div>
 
 
@@ -240,56 +260,72 @@
         <h2>Activités à Marseille</h2>
         <div class="blocActivite">
 
-            <div class="premierColonne">
 
-                <div class="geanteCarteActivite">
-                    <img class="imgGeanteActivite"
+            <div class="colonneActivite">
+
+                <div class="carteActivite carteUn borderTop borderBottom">
+                    <img class="imgActiviteUn borderTop"
                         src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                    <h3 class="titreActivite">Vieux Port</h3>
+                    <h3 class="titreActivite borderBottom">Vieux Port</h3>
                 </div>
-
             </div>
 
-            <div class="deuxiemeColonne">
 
-                <div class="grandeCarteActivite">
-                    <img class="imgGrandeActivite" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                        alt="">
-                    <h3 class="titreActivite">Fort de Pomègues</h3>
+
+
+
+
+            <div class="colonneActivite">
+
+                <div class="carteActivite carteDeux  borderTop borderBottom">
+                    <img class="imgActiviteDeux borderTop"
+                        src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                    <h3 class="titreActivite borderBottom">Fort de Pomègues</h3>
                 </div>
 
-                <div class="tresPetiteCarteActivite">
-                    <img class="imgTresPetiteActivite"
+                <div class="carteActivite carteTrois borderTop borderBottom">
+                    <img class="imgActiviteTrois borderTop"
                         src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-                    <h3 class="titreActivite">Îles du Frioul</h3>
+                    <h3 class="titreActivite borderBottom">Îles du Frioul</h3>
                 </div>
-
             </div>
 
-            <div class="troisiemeColonne">
 
-                <div class="geanteCarteActivite">
-                    <img class="imgGeanteActivite"
+
+
+
+
+            <div class="colonneActivite">
+
+                <div class="carteActivite carteUn borderTop borderBottom">
+                    <img class="imgActiviteUn borderTop"
                         src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
-                    <h3 class="titreActivite">Parc National des Calanques</h3>
+                    <h3 class="titreActivite borderBottom">Parc National des Calanques</h3>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="colonneActivite">
+
+                <div class="carteActivite carteQuattre borderTop borderBottom">
+                    <img class="imgActiviteQuattre borderTop"
+                        src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                    <h3 class="titreActivite borderBottom">Note-Dame-de-la-Garde</h3>
+                </div>
+
+                <div class="carteActivite carteCinq borderTop borderBottom">
+                    <img class="imgActiviteCinq borderTop"
+                        src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                    <h3 class="titreActivite borderBottom">Parc Longchamp</h3>
                 </div>
 
             </div>
 
-            <div class="quatriemeColonne">
 
-                <div class="petiteCarteActivite">
-                    <img class="imgPetiteActivite" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                        alt="">
-                    <h3 class="titreActivite">Notre-de-Dame-de-la-Garde</h3>
-                </div>
-
-                <div class="moyenneCarteActivite">
-                    <img class="imgMoyenneActivite" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                        alt="">
-                    <h3 class="titreActivite">Parc Longchamp</h3>
-                </div>
-            </div>
 
         </div>
 
