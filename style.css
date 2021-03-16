@@ -14,6 +14,10 @@ a {
     color: #0065FC;
 }
 
+.greyStar {
+    color: #F2F2F2;
+}
+
 .lightblue{
     background-color: #DEEBFF;
 }
@@ -26,6 +30,10 @@ h1 , h2 ,h3 {
     font-weight: 600;
 }
 
+.gras{
+    font-weight: bold;
+}
+
 /*                   !!!!!!!! NAVIGATION !!!!!!!!!!!                 */
 .navbar {
     display: flex;
@@ -36,7 +44,7 @@ h1 , h2 ,h3 {
 }
 
 .navbarlogo {
-    width: 50%;
+    width: 60%;
     height: 50px;
     /* border: rgb(27, 38, 139) solid 1px; */
 }
@@ -50,7 +58,7 @@ h1 , h2 ,h3 {
 .navbarList {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-block-start: 0px;
     width: 100%;
     padding-inline-start: 10px;
@@ -67,6 +75,8 @@ h1 , h2 ,h3 {
     padding-top: 20px;
     font-weight: bold;
     border-top: white solid 2px;
+    width: 13.3%;
+    text-align: center;
 }
 
 .navbarLink:hover {
@@ -76,6 +86,7 @@ h1 , h2 ,h3 {
 /*           !!!!!!!!!!!!!!!!!header!!!!!!!!!!!!!!!!!            */
  .sectionRecherche {
      /* border: orchid solid 1px; */
+     margin-bottom: 50px;
  }
 .searchBar {
     border-radius: 10px;
@@ -129,7 +140,7 @@ h1 , h2 ,h3 {
     flex-direction: row;
     align-items: center;
     /* border: 2px solid red; */
-    width: 90%;
+    width: 75%;
     margin-top: 50px;
 }
 .titreFiltre {
@@ -140,7 +151,7 @@ h1 , h2 ,h3 {
     display: flex;
     justify-content: space-between;
     /* border: blue solid 1px; */
-    width: 85%;
+    width: 90%;
 }
 .linkFiltre {
     display: flex;
@@ -181,24 +192,27 @@ h1 , h2 ,h3 {
 /* !!!!!!!!!!!!!!Contenu de la page!!!!!!!!!!!!!!!!!!!! */
 .mainSection{
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 60px;
+    /* justify-content: space-between; */
 }
 
 /* !!!!!!!!!!!!!!!!!!Section hebergement!!!!!!!!!!!!!! */
 
 .blocHebergement {
-    width: 60%;
+    width: 65%;
     border-radius: 30px;
-    /* margin-right: 50px; */
+    margin-right: 3%;
 }
 
 .titreDecalage {
-    padding-left: 3%;
+    padding-left: 5%;
 }
 .listeHebergement {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
 }
 .carteHebergement {
     width: 30%;
@@ -206,7 +220,7 @@ h1 , h2 ,h3 {
     background-color: white;
     /* padding: 5px; */
     border-radius: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,24 +238,31 @@ h1 , h2 ,h3 {
 }
 
 .nomHebergement {
-    margin: 0px 5px 0px 5px;
+    margin: 7px 5px 0px 5px;
     width: 95%;
+    /* border: aqua solid 1px; */
 }
 
 .prixHebergment {
     width: 95%;
-    margin: 0px 5px 0px 5px;
+    margin: 5px 5px 5px 5px;
+    /* border: blue solid 1px; */
 }
 
 .noteHebergement {
-    margin: 5px 5px;
+    margin: 5px 5px 10px 5px;
     width: 95%;
+    /* border: springgreen solid 1px; */
+}
+
+.afficherPlus {
+    margin-bottom: 20px;
 }
 
 /* !!!!!!!!!!!!!!!!!section populaire!!!!!!!!!!!!!! */
 
 .blocPopulaire {
-    width: 30%;
+    width: 32%;
     border-radius: 30px;
 }
 
@@ -250,7 +271,8 @@ h1 , h2 ,h3 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 97%;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .listePopulaire {
@@ -265,10 +287,11 @@ h1 , h2 ,h3 {
     flex-direction: row;
     align-items: center;
     background-color: white;
-    width: 97%;
+    width: 82%;
     /* padding: 5px; */
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    padding: 3px;
 }
 
 
@@ -284,16 +307,22 @@ h1 , h2 ,h3 {
 .descriptionPopulaire {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5px;
+    /* border: springgreen solid 1px; */
 }
 
 .nomPopulaire {
     margin: 0px 5px;
+    /* border: steelblue solid 1px; */
 }
 
 .notePopulaire {
-    margin: 0px 5px;
+    margin: 0px 5px 40px 5px;
+    /* border: tomato solid 1px; */
 }
 
+/*  */
 /*!!!!!!!!!!!!!!!!section activite!!!!!!!!!!!!!!!!!!*/
 
 .blocActivite {
@@ -302,7 +331,7 @@ h1 , h2 ,h3 {
 }
 
 .colonneActivite {
-    width: 20%;
+    width: 22%;
     height: 450px;
     display: flex;
     justify-content: space-between;
@@ -323,9 +352,11 @@ h1 , h2 ,h3 {
 .titreActivite {
     /* border: tomato solid 1px; */
     margin-bottom: 0px;
-    width: 100%;
+    width: auto;
     height: 60px;
     padding-left: 10px;
+    padding-top: 17px;
+    margin-block-start: auto;
 }
 
 .borderTop {
@@ -346,7 +377,7 @@ h1 , h2 ,h3 {
 
 .imgActiviteUn {
     width: 100%;
-    height: 390px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -459,6 +490,7 @@ h1 , h2 ,h3 {
     /* ---- hebergement--- */
     .blocHebergement {
         width: 60%;
+        margin-right: 5%;
     }
 
     .blocPopulaire {
@@ -466,7 +498,10 @@ h1 , h2 ,h3 {
     }
 
     /* ---- activite---  */
-    
+    .secondeSection {
+        width: 98%;
+        margin-left: 1%;
+    }
     .colonneActivite {
         height: 300px;
         width: 23%;
@@ -510,6 +545,10 @@ h1 , h2 ,h3 {
 
     .imgActiviteCinq {
         height: 99px;
+    }
+
+    .titreActivite {
+        padding-top: 0px;
     }
 
 }
@@ -630,6 +669,7 @@ h1 , h2 ,h3 {
         flex-direction: column;
         /* border: springgreen solid 1px; */
         align-items: flex-start;
+        width: 100%;
     }
 
     .titreFiltre {
@@ -640,6 +680,7 @@ h1 , h2 ,h3 {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .linkFiltre {
@@ -660,6 +701,11 @@ h1 , h2 ,h3 {
         margin-bottom: 10px;
     }
     
+    .cartePopulaire {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    
     .descriptionPopulaire {
        /* border: 1px solid red; */
        margin-left: 7%;
@@ -678,7 +724,7 @@ h1 , h2 ,h3 {
     }
 
     .carteHebergement {
-        width: auto;
+        width: 100%;
         margin-bottom: 15px;
         box-shadow:1px 1px 2px 1px rgb(192, 194, 194);
     }
@@ -705,7 +751,7 @@ h1 , h2 ,h3 {
     }
 
     .carteActivite {
-        width: 95%;
+        width: 90%;
         margin-bottom: 10px;
     }
 
