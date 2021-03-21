@@ -2,7 +2,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     max-width: 1824px;
-    margin-top: 0;
+    margin: 0px;
 }
 
 .body {
@@ -465,6 +465,9 @@ h1 , h2 ,h3 {
         margin: 0px;
     }
 
+    .body {
+        margin: 0px;
+    }
     .sectionRecherche {
         margin-left: 10px;
     }
@@ -481,6 +484,7 @@ h1 , h2 ,h3 {
 
     .imgLogo {
         padding-top: 5px;
+        padding-left: 1%;
     }
 
     .navbarList {
@@ -593,6 +597,10 @@ h1 , h2 ,h3 {
         margin: 0px;
     }
 
+    .body {
+        margin: 0px;
+    }
+
     /*--- navigation---- */
 
     .navbarlogo {
@@ -622,7 +630,7 @@ h1 , h2 ,h3 {
 
     .navbarLink {
         order: 3;
-        width: 49%;
+        width: 50%;
         text-align: center;
         padding-bottom: 5px;
         border-bottom: #F2F2F2 solid 3px;
@@ -639,7 +647,7 @@ h1 , h2 ,h3 {
     .sectionRecherche {
         display: flex;
         flex-direction: column;
-        margin : 0 10px 0 10px ;
+        padding : 0 10px 0 10px ;
     }
 
      .searchButton {
