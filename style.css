@@ -1,9 +1,13 @@
 /*!!!!!!!!!! Style général !!!!!!!!!! */
 body {
-    margin: 0px 50px 0 50px;
     font-family: 'Raleway', sans-serif;
     max-width: 1824px;
 }
+
+.body {
+    margin: 0px 50px 0 50px;
+}
+
 
 a {
     text-decoration: none;
@@ -44,6 +48,7 @@ h1 , h2 ,h3 {
 .navbarlogo {
     width: 60%;
     height: 50px;
+    list-style-type: none;
 }
 
 .imgLogo {
