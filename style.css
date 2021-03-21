@@ -36,9 +36,9 @@ h1 , h2 ,h3 {
 
 /*                   !!!!!!!! NAVIGATION !!!!!!!!!!!                 */
 .navbar {
-    display: flex;
-    justify-content: space-between;
     margin-top: 1px;
+    display: flex;
+    flex-direction: row;
 }
 
 .navbarlogo {
@@ -56,7 +56,7 @@ h1 , h2 ,h3 {
     flex-direction: row;
     margin-block-start: 0px;
     width: 100%;
-    padding-inline-start: 10px;
+    padding-inline-start: 0px;
 }
 
 .navbarSubs , .navbarLink {
@@ -101,6 +101,7 @@ h1 , h2 ,h3 {
     border: #F2F2F2 1PX solid   ;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    padding-left: 10px;
 }
 
 .searchButton {
@@ -163,7 +164,10 @@ h1 , h2 ,h3 {
     align-items: center;
     padding-left : 10px;
     padding-right: 10px;
-    
+}
+
+.linkFiltre:hover {
+    background-color: #F2F2F2;
 }
 
 .infoContent {
@@ -459,9 +463,14 @@ h1 , h2 ,h3 {
         margin-left: 10px;
     }
 
+
     /*---- navigation--- */
     .navbarlogo {
-        width: 60%;
+        width: 50%;
+    }
+
+    .navbarLink, .navbarSubs {
+        width: 16.6%;
     }
 
     .imgLogo {
@@ -652,6 +661,7 @@ h1 , h2 ,h3 {
     
     .searchCase {
         border-right: none;
+
     }
     /* ----filtre---- */
 
