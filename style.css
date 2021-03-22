@@ -240,6 +240,7 @@ h1 , h2 ,h3 {
     height: 115px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .descriptionHebergement {
